@@ -45,8 +45,9 @@ var id=setInterval(slideTime, 5000);﻿
 var tab;
 var tabContent;
 window.onload=function(){
-	tabContent=document.getElementsByClassName('tabContent');
+	tabContent=document.getElementsByClassName('tab_content');
 	tab=document.getElementsByClassName('tab');
+	
 	hideTabsContent(1);
 }
 function hideTabsContent(a){
@@ -73,7 +74,10 @@ function showTabsContent(b){
 		tab[b].classList.add('chosen_tab');
 		tabContent[b].classList.remove('hide');
 		tabContent[b].classList.add('show');
+
 	}
 }
+
+
 
 
