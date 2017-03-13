@@ -46,7 +46,8 @@ var tab;
 var tabContent;
 window.onload=function(){
 	tabContent=document.getElementsByClassName('tab_content');
-	tab=document.getElementsByClassName('tab');
+	tab=document.getElementsByClassName('tab'),
+	img=document.getElementsByClassName('arrow-bott');
 	
 	hideTabsContent(1);
 }
@@ -69,6 +70,9 @@ document.getElementById('tabs').onclick=function (event){
 	}
 }
 function showTabsContent(b){
+	if (b==0){img[0].style.cssText='left:15%;'}
+	if (b==1){img[0].style.cssText='left:49%;'}
+	if (b==2){img[0].style.cssText='left:82%;'}
 	if (tabContent[b].classList.contains('hide')){
 		hideTabsContent(0);
 		tab[b].classList.add('chosen_tab');
