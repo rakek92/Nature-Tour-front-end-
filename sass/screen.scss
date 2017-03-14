@@ -400,9 +400,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#65c03d', end
 }
 /*---------------SIDEBAR--------------*/
 .sidebar{
-	min-height:100%;
-	float:right;
 	height:100%;
+	float:right;
+	
 	background-color: #f4f2ec;
 
 	border:1px solid #fff;
@@ -463,9 +463,8 @@ box-shadow: 0px 0px 0px 4px rgba(232,229,222,1);
 	border: none;
 }
 .search_img{
-	position:absolute;
-	top:0;
-	left:0;
+	position:relative;
+	
 }
 
 .quick_search{
